@@ -11,6 +11,12 @@
 		9DF138401E4CDE8C00AF0400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF138381E4CDE8C00AF0400 /* LaunchScreen.storyboard */; };
 		9DF138411E4CDE8C00AF0400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF1383A1E4CDE8C00AF0400 /* Main.storyboard */; };
 		9DF138431E4CDE8C00AF0400 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF1383E1E4CDE8C00AF0400 /* AppDelegate.swift */; };
+		EFDD84D01E4E1D1C00F9D46E /* ShoppingList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EFDD84CE1E4E1D1C00F9D46E /* ShoppingList.xcdatamodeld */; };
+		EFDD84D21E4E1D7900F9D46E /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD84D11E4E1D7900F9D46E /* Stack.swift */; };
+		EFDD84D41E4E1DDD00F9D46E /* Shoppinglist+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD84D31E4E1DDD00F9D46E /* Shoppinglist+Convenience.swift */; };
+		EFDD84D61E4E1F0C00F9D46E /* ShoppinglistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD84D51E4E1F0C00F9D46E /* ShoppinglistController.swift */; };
+		EFDD84D81E4E23E400F9D46E /* shoppinglistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD84D71E4E23E400F9D46E /* shoppinglistTableViewController.swift */; };
+		EFDD84DA1E4E24B400F9D46E /* ShoppinglistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD84D91E4E24B400F9D46E /* ShoppinglistCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		9DF1383B1E4CDE8C00AF0400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DF1383C1E4CDE8C00AF0400 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DF1383E1E4CDE8C00AF0400 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFDD84CF1E4E1D1C00F9D46E /* ShoppingList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoppingList.xcdatamodel; sourceTree = "<group>"; };
+		EFDD84D11E4E1D7900F9D46E /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = ../Resources/Stack.swift; sourceTree = "<group>"; };
+		EFDD84D31E4E1DDD00F9D46E /* Shoppinglist+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shoppinglist+Convenience.swift"; sourceTree = "<group>"; };
+		EFDD84D51E4E1F0C00F9D46E /* ShoppinglistController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppinglistController.swift; sourceTree = "<group>"; };
+		EFDD84D71E4E23E400F9D46E /* shoppinglistTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shoppinglistTableViewController.swift; sourceTree = "<group>"; };
+		EFDD84D91E4E24B400F9D46E /* ShoppinglistCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppinglistCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +87,9 @@
 		9DF138441E4CDE9200AF0400 /* Storyboardfs */ = {
 			isa = PBXGroup;
 			children = (
-				9DF138381E4CDE8C00AF0400 /* LaunchScreen.storyboard */,
 				9DF1383A1E4CDE8C00AF0400 /* Main.storyboard */,
+				EFDD84CE1E4E1D1C00F9D46E /* ShoppingList.xcdatamodeld */,
+				9DF138381E4CDE8C00AF0400 /* LaunchScreen.storyboard */,
 			);
 			name = Storyboardfs;
 			sourceTree = "<group>";
@@ -91,6 +104,7 @@
 		9DF138471E4CDEAC00AF0400 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EFDD84D71E4E23E400F9D46E /* shoppinglistTableViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -98,6 +112,10 @@
 		9DF138481E4CDEB800AF0400 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EFDD84D11E4E1D7900F9D46E /* Stack.swift */,
+				EFDD84D31E4E1DDD00F9D46E /* Shoppinglist+Convenience.swift */,
+				EFDD84D51E4E1F0C00F9D46E /* ShoppinglistController.swift */,
+				EFDD84D91E4E24B400F9D46E /* ShoppinglistCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -181,7 +199,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFDD84DA1E4E24B400F9D46E /* ShoppinglistCell.swift in Sources */,
 				9DF138431E4CDE8C00AF0400 /* AppDelegate.swift in Sources */,
+				EFDD84D41E4E1DDD00F9D46E /* Shoppinglist+Convenience.swift in Sources */,
+				EFDD84D61E4E1F0C00F9D46E /* ShoppinglistController.swift in Sources */,
+				EFDD84D21E4E1D7900F9D46E /* Stack.swift in Sources */,
+				EFDD84D01E4E1D1C00F9D46E /* ShoppingList.xcdatamodeld in Sources */,
+				EFDD84D81E4E23E400F9D46E /* shoppinglistTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +365,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EFDD84CE1E4E1D1C00F9D46E /* ShoppingList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EFDD84CF1E4E1D1C00F9D46E /* ShoppingList.xcdatamodel */,
+			);
+			currentVersion = EFDD84CF1E4E1D1C00F9D46E /* ShoppingList.xcdatamodel */;
+			path = ShoppingList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1A4A23111CCA8D2C003A4350 /* Project object */;
 }
